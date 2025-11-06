@@ -1,4 +1,4 @@
-import { Asideclient } from "@/components/client/asideclient";
+import { Asideclient } from "@/components/client/Asideclient";
 import { CardclientD } from "@/components/client/CardclientD";
 import { CardclientS } from "@/components/client/CardclientS";
 

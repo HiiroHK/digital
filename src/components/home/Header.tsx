@@ -1,5 +1,5 @@
 import { PaintBucket } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 export function Header() {
   return (
@@ -27,7 +27,7 @@ export function Header() {
           <Button variant={"textonly"}>Sou Pintor</Button>
         </a>
         {/* Botão de "Entrar" inacabado, falta direcionar à determinada página */}
-        <a>
+        <a href="/login">
           <Button variant={"textonly"} className="mr-2">
             Entrar
           </Button>
