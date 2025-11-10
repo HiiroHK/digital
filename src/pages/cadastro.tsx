@@ -6,11 +6,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ArrowRight } from "lucide-react";
 
 export function Cadastro() {
   return (
-    <div className="flex w-auto items-center justify-center">
-      <Tabs>
+    <div>
+      <Tabs className="flex items-center justify-center">
         <TabsList>
           <TabsTrigger value="Usuário">Usuário</TabsTrigger>
           <TabsTrigger value="Pintor">Pintor</TabsTrigger>
@@ -19,21 +20,48 @@ export function Cadastro() {
         <TabsContent value="Usuário">
           <Card className="w-2xl">
             <CardHeader>
-              <CardTitle>
-                <h1>Faça seu cadastro</h1>
+              <CardTitle className="space-y-3">
+                <h1 className="text-2xl">Faça seu cadastro</h1>
                 <p>Seja bem-vindo ao nosso site usuario</p>
               </CardTitle>
-              <CardContent className="flex flex-col gap-4">
-                <input type="text" placeholder="Digite seu nome de usuário" />
-                <input type="text" placeholder="Digite seu email" />
-                <input type="text" placeholder="Digite seu telefone" />
-                <input type="text" placeholder="Digite seu endereço" />
-                <input type="password" placeholder="Digite sua senha" />
-              </CardContent>
             </CardHeader>
-            <CardFooter>
-              <button className="w-full cursor-pointer rounded-md bg-blue-500 p-2 text-white hover:bg-blue-600">
-                Fazer cadastro
+            <CardContent className="flex flex-col gap-6">
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu nome de usuário"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu email"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu telefone"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu endereço"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="password"
+                placeholder="Digite sua senha"
+              />
+            </CardContent>
+
+            <CardFooter className="flex flex-col items-start space-y-3">
+              <a href="/login">
+                <button className="flex cursor-pointer text-blue-500 hover:text-blue-600">
+                  <p>Já é cadastrado, então faça seu login aqui</p>
+                  <ArrowRight />
+                </button>
+              </a>
+              <button className="w-full cursor-pointer rounded-md bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600">
+                Fazer cadasto
               </button>
             </CardFooter>
           </Card>
@@ -42,20 +70,46 @@ export function Cadastro() {
         <TabsContent value="Pintor">
           <Card className="w-2xl">
             <CardHeader>
-              <CardTitle>
-                <h1>Faça seu cadastro</h1>
+              <CardTitle className="space-y-3">
+                <h1 className="text-2xl">Faça seu cadastro</h1>
                 <p>Seja bem-vindo ao nosso site pintor</p>
               </CardTitle>
-              <CardContent className="flex flex-col gap-4">
-                <input type="text" placeholder="Digite seu nome de usuário" />
-                <input type="text" placeholder="Digite seu email" />
-                <input type="text" placeholder="Digite seu telefone" />
-                <input type="text" placeholder="Digite seu endereço" />
-                <input type="password" placeholder="Digite sua senha" />
-              </CardContent>
             </CardHeader>
-            <CardFooter>
-              <button className="w-full cursor-pointer rounded-md bg-blue-500 p-2 text-white hover:bg-blue-600">
+            <CardContent className="flex flex-col gap-6">
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu nome de usuário"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu email"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu telefone"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="text"
+                placeholder="Digite seu endereço"
+              />
+              <input
+                className="rounded-md border border-black p-3"
+                type="password"
+                placeholder="Digite sua senha"
+              />
+            </CardContent>
+            <CardFooter className="flex flex-col items-start space-y-3">
+              <a href="/login">
+                <button className="flex cursor-pointer text-blue-500 hover:text-blue-600">
+                  <p>Já é cadastrado, então faça seu login aqui</p>
+                  <ArrowRight />
+                </button>
+              </a>
+              <button className="w-full cursor-pointer rounded-md bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600">
                 Fazer cadastro
               </button>
             </CardFooter>

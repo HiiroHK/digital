@@ -1,7 +1,7 @@
 import { Footer } from "@/components/home/Footer";
 import { Header } from "@/components/home/Header";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+
 import { Clock, CreditCard, MapPin, Shield, Star, Users } from "lucide-react";
 
 export function Home() {
