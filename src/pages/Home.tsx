@@ -14,11 +14,11 @@ export function Home() {
         <div className="via-bg-blue-400/80 absolute inset-0 w-full bg-linear-to-br from-blue-600/90 to-yellow-600/70" />
         <div className="z-2 max-w-160 justify-items-center align-top">
           <h1 className="mb-6 self-center text-center text-6xl font-bold text-white">
-            Encontre Pintores Profissionais Perto de Vocêwesdfsdf
+            Encontre Pintores Profissionais Perto de Você
           </h1>
           <h1 className="mb-40 self-center text-center text-lg font-medium text-white">
             Conecte-se com profissionais qualificados em minutos. Rápido, seguro
-            e confiável.
+            e confiável.qwertyuioplkjhgfds
           </h1>
           <div className="flex columns-3">
             <div className="mx-3 flex">
