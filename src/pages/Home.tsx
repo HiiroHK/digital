@@ -18,7 +18,7 @@ export function Home() {
           </h1>
           <h1 className="mb-40 self-center text-center text-lg font-medium text-white">
             Conecte-se com profissionais qualificados em minutos. Rápido, seguro
-            e confiável.qwertyuioplkjhgfds
+            e confiável.
           </h1>
           <div className="flex columns-3">
             <div className="mx-3 flex">
@@ -158,23 +158,6 @@ export function Home() {
         </div>
       </div>
 
-      {/* Div Final */}
-      <div className="flex h-80 flex-col place-content-center justify-center bg-blue-700/90">
-        <h1 className="mb-4 text-4xl font-bold text-white">
-          Pronto Para Começar?
-        </h1>
-        <h1 className="mb-9 text-lg font-semibold text-white">
-          Encontre o pintor ideal para seu projeto em minutos
-        </h1>
-        <div>
-          <a
-            href="/search"
-            className="ursor-pointer rounded-md bg-white px-6 py-3 font-semibold text-gray-800"
-          >
-            Buscar Profissionais Agora
-          </a>
-        </div>
-      </div>
       <Footer />
     </div>
   );
