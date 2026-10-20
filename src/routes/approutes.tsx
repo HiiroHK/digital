@@ -2,6 +2,7 @@ import { Cadastro } from "@/pages/cadastro";
 import { Client } from "@/pages/client";
 import { Home } from "@/pages/Home";
 import { Login } from "@/pages/login";
+import { Pintor } from "@/pages/pintor";
 import { Profisional } from "@/pages/profissional";
 import { Search } from "@/pages/search";
 import { BrowserRouter, Route, Routes } from "react-router";
@@ -16,6 +17,7 @@ export function AppRoutes() {
         <Route path="/client" element={<Client />} />
         <Route path="/professional" element={<Profisional />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/perfil-do-pintor" element={<Pintor />} />
       </Routes>
     </BrowserRouter>
   );
