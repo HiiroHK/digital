@@ -3,12 +3,12 @@ import { CardprofessionalD } from "@/components/profissional/CardprofessionalD";
 import { CardprofessionalS } from "@/components/profissional/CardprofessionalS";
 import { CardprofessionalT } from "@/components/profissional/CardprofessionalT";
 
-export function Profisional() {
+export function Professional() {
   return (
     <div className="pl-64">
       <Asideprofessional />
       {/* header */}
-      <div className="p-8">
+      <div className="pestrelas-8">
         <div className="mb-8 space-y-8">
           <div>
             <h1 className="text-2xl font-bold">Painel do profissional</h1>

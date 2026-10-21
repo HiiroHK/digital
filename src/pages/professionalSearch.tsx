@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export function Search() {
+export function ProfessionalSearch() {
   const cards = Array.from({ length: 100 }, (_, index) => index);
   return (
     <div>

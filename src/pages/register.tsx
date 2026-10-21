@@ -8,7 +8,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight } from "lucide-react";
 
-export function Cadastro() {
+export function Register() {
   return (
     <div>
       <Tabs className="flex items-center justify-center">
