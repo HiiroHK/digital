@@ -1,12 +1,51 @@
-import { Asideprofessional } from "@/components/profissional/Asideporfissional";
-import { CardprofessionalD } from "@/components/profissional/CardprofessionalD";
-import { CardprofessionalS } from "@/components/profissional/CardprofessionalS";
-import { CardprofessionalT } from "@/components/profissional/CardprofessionalT";
+import { Cardactiveservices } from "@/components/profissional/Cardactiveservices";
+import { Carddados } from "@/components/profissional/Carddados";
+import { Cardnearbyservice } from "@/components/profissional/Cardnearbyservice";
+import { Separator } from "@radix-ui/react-separator";
+import { LogOut, User } from "lucide-react";
 
 export function Profisional() {
   return (
     <div className="pl-64">
-      <Asideprofessional />
+      <aside className="fixed top-0 left-0 h-full w-64 border border-r bg-gray-100 p-4">
+      <div>
+        <div className="flex text-center">
+          <a
+            href="/"
+            className="cursor-pointer bg-linear-to-r from-blue-600 to-yellow-500 bg-clip-text text-2xl font-bold text-transparent"
+          >
+            PintaJá
+          </a>
+        </div>
+
+        <Separator className="my-4" />
+
+        <div className="flex flex-col gap-4">
+          <a
+            href="/professional"
+            className="w-full cursor-pointer rounded-md p-2 hover:bg-blue-600 hover:text-white"
+          >
+            <button>Trabalhos</button>
+          </a>
+
+          <a
+            href="/professional/profile"
+            className="flex w-full cursor-pointer rounded-md p-2 hover:bg-blue-600 hover:text-white"
+          >
+            <User />
+            <button>Perfil</button>
+          </a>
+
+          <a
+            href="/"
+            className="flex w-full cursor-pointer rounded-md p-2 hover:bg-red-600 hover:text-white"
+          >
+            <LogOut />
+            <button>Sair</button>
+          </a>
+        </div>
+      </div>
+    </aside>
       {/* header */}
       <div className="p-8">
         <div className="mb-8 space-y-8">
@@ -16,10 +55,10 @@ export function Profisional() {
           </div>
           {/* cards info */}
           <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
-            <CardprofessionalD />
-            <CardprofessionalD />
-            <CardprofessionalD />
-            <CardprofessionalD />
+            <Carddados />
+            <Carddados />
+            <Carddados />
+            <Carddados />
           </div>
         </div>
         <div className="space-y-4">
@@ -30,7 +69,7 @@ export function Profisional() {
               <h2 className="mb-5 text-2xl font-bold">Meus Serviços</h2>
             </div>
             <div>
-              <CardprofessionalS />
+              <Cardactiveservices />
             </div>
           </div>
           {/* serviços disponiveis */}
@@ -41,9 +80,9 @@ export function Profisional() {
               </h2>
             </div>
             <div className="mt-4 space-y-4">
-              <CardprofessionalT />
-              <CardprofessionalT />
-              <CardprofessionalT />
+              <Cardnearbyservice />
+              <Cardnearbyservice />
+              <Cardnearbyservice />
             </div>
           </div>
         </div>

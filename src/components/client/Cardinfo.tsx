@@ -10,7 +10,7 @@ import {
 } from "../ui/dialog";
 import { Textarea } from "../ui/textarea";
 
-interface cardclientprops {
+interface cardInfoprops {
   title: string;
   status: "Em execução" | "Finalizado";
   name: string;
@@ -19,14 +19,14 @@ interface cardclientprops {
   valor: number;
 }
 
-export function CardclientS({
+export function Cardinfo({
   title,
   status,
   name,
   endereco,
   data,
   valor,
-}: cardclientprops) {
+}: cardInfoprops) {
   return (
     <div>
       <Card className="w-full p-4">

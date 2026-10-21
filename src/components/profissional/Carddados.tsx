@@ -1,6 +1,6 @@
 import { Card, CardContent } from "../ui/card";
 
-export function CardprofessionalD() {
+export function Carddados() {
   return (
     <Card>
       <CardContent>

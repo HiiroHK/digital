@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react";
 import { Card, CardContent, CardFooter, CardTitle } from "../ui/card";
 import { Separator } from "../ui/separator";
 
-export function CardprofessionalT() {
+export function Cardnearbyservice() {
   return (
     <Card>
       {/* info principal */}

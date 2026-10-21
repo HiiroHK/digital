@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react";
 import { Card, CardContent, CardFooter, CardTitle } from "../ui/card";
 import { Separator } from "../ui/separator";
 
-export function CardprofessionalS() {
+export function Cardactiveservices() {
   return (
     <Card>
       <CardTitle className="flex justify-between px-6">

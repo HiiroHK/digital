@@ -1,13 +1,13 @@
 import { Card, CardContent } from "../ui/card";
 
 export type colorTypes = "green" | "red" | "orange" | "blue";
-interface CardClientProps {
+interface CardDadosProps {
   title: string;
   value: string;
   color?: colorTypes;
 }
 
-export function CardclientD({ title, value, color }: CardClientProps) {
+export function Carddados({ title, value, color }: CardDadosProps) {
   return (
     <div>
       {color === "green" && (
