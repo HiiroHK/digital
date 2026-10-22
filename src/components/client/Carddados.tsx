@@ -11,7 +11,7 @@ export function Carddados({ title, value, color }: CardDadosProps) {
   return (
     <div>
       {color === "green" && (
-        <Card className="w-full p-4 border border-green-500">
+        <Card className="w-full border border-green-500 p-4">
           <CardContent className="space-y-4">
             <h1 className="text-xl text-green-500">{title}</h1>
 
@@ -20,7 +20,7 @@ export function Carddados({ title, value, color }: CardDadosProps) {
         </Card>
       )}
       {color === "blue" && (
-        <Card className="w-full p-4 border border-blue-500">
+        <Card className="w-full border border-blue-500 p-4">
           <CardContent className="space-y-4">
             <h1 className="text-xl text-blue-500">{title}</h1>
 
@@ -29,7 +29,7 @@ export function Carddados({ title, value, color }: CardDadosProps) {
         </Card>
       )}
       {color === "orange" && (
-        <Card className="w-full p-4 border border-orange-500">
+        <Card className="w-full border border-orange-500 p-4">
           <CardContent className="space-y-4">
             <h1 className="text-xl text-orange-500">{title}</h1>
 
@@ -37,7 +37,6 @@ export function Carddados({ title, value, color }: CardDadosProps) {
           </CardContent>
         </Card>
       )}
-
     </div>
   );
 }

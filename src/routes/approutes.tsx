@@ -1,10 +1,10 @@
-import { Cadastro } from "@/pages/cadastro";
+import { Register } from "@/pages/register";
 import { Client } from "@/pages/client";
 import { Home } from "@/pages/Home";
 import { Login } from "@/pages/login";
-import { Pintor } from "@/pages/pintor";
-import { Profisional } from "@/pages/profissional";
-import { Search } from "@/pages/search";
+import { Painter } from "@/pages/painter";
+import { Professional } from "@/pages/professional";
+import { ProfessionalSearch } from "@/pages/professionalSearch";
 import { BrowserRouter, Route, Routes } from "react-router";
 
 export function AppRoutes() {
@@ -13,11 +13,11 @@ export function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/client" element={<Client />} />
-        <Route path="/professional" element={<Profisional />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/perfil-do-pintor" element={<Pintor />} />
+        <Route path="/cadastro" element={<Register />} />
+        <Route path="/cliente" element={<Client />} />
+        <Route path="/professional" element={<Professional />} />
+        <Route path="/procura-do-profissional" element={<ProfessionalSearch />} />
+        <Route path="/perfil-do-pintor" element={<Painter />} />
       </Routes>
     </BrowserRouter>
   );

@@ -4,7 +4,7 @@ import { Cardnearbyservice } from "@/components/profissional/Cardnearbyservice";
 import { Separator } from "@radix-ui/react-separator";
 import { LogOut, User } from "lucide-react";
 
-export function Profisional() {
+export function Professional() {
   return (
     <div className="pl-64">
       <aside className="fixed top-0 left-0 h-full w-64 border border-r bg-gray-100 p-4">
@@ -47,7 +47,7 @@ export function Profisional() {
       </div>
     </aside>
       {/* header */}
-      <div className="p-8">
+      <div className="pestrelas-8">
         <div className="mb-8 space-y-8">
           <div>
             <h1 className="text-2xl font-bold">Painel do profissional</h1>
