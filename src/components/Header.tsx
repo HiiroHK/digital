@@ -20,7 +20,7 @@ export function Header() {
         <a href="#como-funciona">
           <Button variant={"textonly"}>Como Funciona</Button>
         </a>
-        <a href="/search">
+        <a href="/procura-do-profissional">
           <Button variant={"textonly"}>Buscar Profissionais</Button>
         </a>
         <a href="/professional">
@@ -32,7 +32,7 @@ export function Header() {
             Entrar
           </Button>
         </a>
-        <a href="/client">
+        <a href="/cliente">
           <Button>Quero pintar agora</Button>
         </a>
       </div>
