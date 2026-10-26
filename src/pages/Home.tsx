@@ -20,7 +20,7 @@ export function Home() {
             Conecte-se com profissionais qualificados em minutos. Rápido, seguro
             e confiável.
           </h1>
-          <div className="flex columns-3">
+          <div className="flex">
             <div className="mx-3 flex">
               <Shield className="mr-2 text-white" />
               <h1 className="text-white">Profissionais verificados</h1>

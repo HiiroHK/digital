@@ -6,7 +6,7 @@ export function Header() {
     <header className="fixed z-50 w-full columns-2 bg-white/50 px-20 backdrop-blur-lg">
       {/* Coluna 1 - Logotipo */}
       <div className="py-3.5">
-        <a href="/" className="flex w-fit gap-x-2">
+        <a href="/home" className="flex w-fit gap-x-2">
           <Button variant={"textonly"}>
             <PaintBucket className="size-6 text-blue-600" />
             <h1 className="bg-linear-to-r from-blue-600 to-yellow-600 bg-clip-text text-lg font-bold text-transparent">
@@ -27,7 +27,7 @@ export function Header() {
           <Button variant={"textonly"}>Sou Pintor</Button>
         </a>
         {/* Botão de "Entrar" inacabado, falta direcionar à determinada página */}
-        <a href="/login">
+        <a href="/">
           <Button variant={"textonly"} className="mr-2">
             Entrar
           </Button>

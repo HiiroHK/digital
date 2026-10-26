@@ -1,121 +1,62 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowRight } from "lucide-react";
+import { useState } from "react";
 
 export function Register() {
+  const [confirmarsenha, setConfirmarsenha] = useState("");
+  const [senha, setSenha] = useState("");
+  const [erro, setErro] = useState("");
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    setErro("");
+
+    if (senha !== confirmarsenha) {
+      setErro("As senhas não estão iguais");
+      return;
+    }
+    console.log("sucesso");
+  };
   return (
     <div>
-      <Tabs className="flex items-center justify-center">
-        <TabsList>
-          <TabsTrigger value="Usuário">Usuário</TabsTrigger>
-          <TabsTrigger value="Pintor">Pintor</TabsTrigger>
-        </TabsList>
-        {/* card do user */}
-        <TabsContent value="Usuário">
-          <Card className="w-2xl">
-            <CardHeader>
-              <CardTitle className="space-y-3">
-                <h1 className="text-2xl">Faça seu cadastro</h1>
-                <p>Seja bem-vindo ao nosso site usuario</p>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-6">
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu nome de usuário"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu email"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu telefone"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu endereço"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="password"
-                placeholder="Digite sua senha"
-              />
-            </CardContent>
-
-            <CardFooter className="flex flex-col items-start space-y-3">
-              <a href="/login">
-                <button className="flex cursor-pointer text-blue-500 hover:text-blue-600">
-                  <p>Já é cadastrado, então faça seu login aqui</p>
-                  <ArrowRight />
-                </button>
-              </a>
-              <button className="w-full cursor-pointer rounded-md bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600">
-                Fazer cadasto
-              </button>
-            </CardFooter>
-          </Card>
-        </TabsContent>
-        {/*  card do Pintor */}
-        <TabsContent value="Pintor">
-          <Card className="w-2xl">
-            <CardHeader>
-              <CardTitle className="space-y-3">
-                <h1 className="text-2xl">Faça seu cadastro</h1>
-                <p>Seja bem-vindo ao nosso site pintor</p>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-6">
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu nome de usuário"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu email"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu telefone"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="text"
-                placeholder="Digite seu endereço"
-              />
-              <input
-                className="rounded-md border border-black p-3"
-                type="password"
-                placeholder="Digite sua senha"
-              />
-            </CardContent>
-            <CardFooter className="flex flex-col items-start space-y-3">
-              <a href="/login">
-                <button className="flex cursor-pointer text-blue-500 hover:text-blue-600">
-                  <p>Já é cadastrado, então faça seu login aqui</p>
-                  <ArrowRight />
-                </button>
-              </a>
-              <button className="w-full cursor-pointer rounded-md bg-blue-500 p-2 text-white transition-colors hover:bg-blue-600">
-                Fazer cadastro
-              </button>
-            </CardFooter>
-          </Card>
-        </TabsContent>
-      </Tabs>
+      <div>
+        <form action="" onSubmit={handleSubmit}>
+          <div>
+            <p>Coloque seu nome</p>
+            <input type="text" placeholder="ex: usuário" required />
+          </div>
+          <div>
+            <p>Adicione seu email</p>
+            <input type="email" placeholder="ex: exemplo@gmail.com" required />
+          </div>
+          <div>
+            <p>Coloque seu número de celular</p>
+            <input type="number" placeholder="ex: 32123456789" required />
+          </div>
+          <div>
+            <p>Crie uma senha</p>
+            <input
+              type="password"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
+              placeholder="ex: 123456"
+              id="password1"
+              required
+            />
+          </div>
+          <div>
+            <p>Confirme sua senha</p>
+            <input
+              type="password"
+              value={confirmarsenha}
+              onChange={(e) => setConfirmarsenha(e.target.value)}
+              placeholder="ex: 123456"
+              id="password2"
+              required
+            />
+          </div>
+          {erro && <p className="text-red-500">{erro}</p>}
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
     </div>
   );
 }

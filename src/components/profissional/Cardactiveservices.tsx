@@ -1,6 +1,13 @@
 import { MapPin } from "lucide-react";
-import { Card, CardContent, CardFooter, CardTitle } from "../ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../ui/card";
 import { Separator } from "../ui/separator";
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 
 export function Cardactiveservices() {
   return (
@@ -27,9 +34,28 @@ export function Cardactiveservices() {
         <button className="cursor-pointer rounded-md bg-blue-500 p-2 text-white transition-colors hover:bg-blue-700">
           Finalizar serviço
         </button>
-        <button className="cursor-pointer rounded-md border p-2 font-semibold transition-colors hover:bg-yellow-500">
-          Enviar fotos
-        </button>
+        <Dialog>
+          <DialogTrigger className="cursor-pointer rounded-md border p-2 font-semibold transition-colors hover:bg-yellow-500">
+            Enviar fotos
+          </DialogTrigger>
+          <DialogContent>
+            <Card>
+              <CardHeader>
+                <h1 className="text-3xl font-bold">
+                  Adicione aqui as fotos do seu serviço
+                </h1>
+              </CardHeader>
+              <CardContent>
+                <div>
+                  <input type="file" className="rounded-2xl border p-4" />
+                </div>
+              </CardContent>
+              <CardFooter>
+                <button>Enviar</button>
+              </CardFooter>
+            </Card>
+          </DialogContent>
+        </Dialog>
       </CardFooter>
     </Card>
   );

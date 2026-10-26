@@ -78,60 +78,22 @@ export function Cardinfo({
                     <p>Como foi sua experiencia?</p>
                   </DialogTitle>
                 </DialogHeader>
-                <div className="my-4 flex items-center justify-center gap-2">
-                  <button
-                    type="button"
-                    className="cursor-pointer transition-transform hover:scale-110"
-                    onClick={() => {
-                      <Star className="fill-accent text-accent size-8" />;
-                    }}
-                  >
-                    <Star className="size-8" />
-                  </button>
-                  <button
-                    type="button"
-                    className="cursor-pointer transition-transform hover:scale-110"
-                    onClick={() => {
-                      <Star className="fill-accent text-accent size-8" />;
-                    }}
-                  >
-                    <Star className="size-8" />
-                  </button>
-                  <button
-                    type="button"
-                    className="cursor-pointer transition-transform hover:scale-110"
-                    onClick={() => {
-                      <Star className="fill-accent text-accent size-8" />;
-                    }}
-                  >
-                    <Star className="size-8" />
-                  </button>
-                  <button
-                    type="button"
-                    className="cursor-pointer transition-transform hover:scale-110"
-                    onClick={() => {
-                      <Star className="fill-accent text-accent size-8" />;
-                    }}
-                  >
-                    <Star className="size-8" />
-                  </button>
-                  <button
-                    type="button"
-                    className="cursor-pointer transition-transform hover:scale-110"
-                    onClick={() => {
-                      <Star className="fill-accent text-accent size-8 bg-amber-300" />;
-                    }}
-                  >
-                    <Star className="size-8" />
-                  </button>
-                </div>
                 <div>
-                  <Textarea placeholder="Deixe sua avaliação" />
-                </div>
-                <div>
-                  <button className="w-full cursor-pointer rounded-md border bg-blue-500 p-2 font-semibold text-white transition-colors hover:bg-blue-600">
-                    Enviar
-                  </button>
+                  <div className="my-4 flex items-center justify-center gap-2">
+                    <Star className="size-8" />
+                    <Star className="size-8" />
+                    <Star className="size-8" />
+                    <Star className="size-8" />
+                    <Star className="size-8" />
+                  </div>
+                  <div>
+                    <Textarea placeholder="Deixe sua avaliação" />
+                  </div>
+                  <div>
+                    <button className="w-full cursor-pointer rounded-md border bg-blue-500 p-2 font-semibold text-white transition-colors hover:bg-blue-600">
+                      Enviar
+                    </button>
+                  </div>
                 </div>
               </DialogContent>
             </Dialog>
