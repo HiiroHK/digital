@@ -29,7 +29,7 @@ export function Professional() {
           </a>
 
           <a
-            href="/professional/profile"
+            href="/perfil-do-pintor"
             className="flex w-full cursor-pointer rounded-md p-2 hover:bg-blue-600 hover:text-white"
           >
             <User />
